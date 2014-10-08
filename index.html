@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Numeric Sequence Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="js/libs/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="js/libs/bootstrap/css/bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/app/sequencecalculator.css">
+    </head>
+    <body>
+        <div class="container seq-calc">
+            <div class="lightbox hide">
+                <div class="container lightbox__container">
+                    <div class="row lightbox--close">
+                        <a href="#" class="glyphicon glyphicon-remove"></a>
+                    </div>
+                    <div class="row lightbox__content"></div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="row nav__container">
+                    <button type="button" class="btn btn-primary instructions">
+                        <span class="glyphicon glyphicon-file"></span> Instructions
+                    </button>
+                </div>
+                <div class="row input__container">
+                    <div class="input-group">
+                        <input id="user__input" type="text" class="form-control" placeholder="Enter a number here">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Generate</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="row status__container">
+                    <div class="loading__container hide">
+                        <img src="assets/images/loading.gif" class="img-responsive loading">
+                    </div>
+                    <div class="error__container alert-danger hide">
+                        <span class="glyphicon glyphicon-ban-circle"></span>
+                        <span class="error__text"></span>
+                    </div>
+                    <div class="info__container hide">
+                        <div class="row info__row">
+                            <div class="col-sm-6 col-xs-12 alert-info">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                                <span class="info__text"></span>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 nav-info">
+                                <button type="button" class="btn btn-primary load__more load__more--prev" title="Load previous sequences">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </button>
+                                <button type="button" class="btn btn-primary load__more load__more--next" title="Load next sequences">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row output__container"></div>
+            </div>
+        </div>
+        <script data-main="js/app/view/seqcalcview" src="js/libs/require/require.js"></script>
+    </body>
+</html>

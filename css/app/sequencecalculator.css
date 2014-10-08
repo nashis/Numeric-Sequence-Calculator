@@ -1,0 +1,62 @@
+.seq-calc .lightbox {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.seq-calc .lightbox__container {
+    margin: 50px auto;
+    position: relative;
+    background-color: #fff;
+}
+.seq-calc .lightbox__content {
+    position: relative;
+    margin: 30px;
+    padding: 10px;
+}
+.seq-calc .lightbox--close {
+    position: absolute;
+    margin: 10px;
+    right: 5px;
+    cursor: pointer;
+}
+.seq-calc .nav__container, .seq-calc .input__container, .seq-calc .status__container, .seq-calc .output__container {
+    margin: 15px auto;
+}
+.seq-calc .error__container, .seq-calc .alert-info {
+    padding: 8px;
+    border-radius: 4px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.seq-calc .nav-info {
+    margin-left: -15px;
+}
+.seq-calc .info__row {
+    margin: auto 0px;
+}
+.seq-calc .info__row--nav {
+    margin-top: 15px;
+}
+.seq-calc .load__more {
+    color: white;
+    text-decoration: none;
+}
+.seq-calc .load__more:hover {
+    color: white;
+    text-decoration: none;
+}
+.seq-calc .bg-danger {
+    background-color: #f2dede;
+}
+.seq-calc .loading {
+    margin: 0px auto 15px;
+}
+.seq-calc .result--group {
+    max-height: 360px;
+    overflow: auto;
+}
